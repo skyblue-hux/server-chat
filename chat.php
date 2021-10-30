@@ -12,10 +12,9 @@
 <?php
   $user_name = $_GET['user_name'];
   echo '<script>localStorage.setItem("User", "' . $user_name . '")</script>';
-  ini_set('display_errors', 1);
   if ($_GET['message']) {
   file_put_contents('chats.txt', '<p class="' . $user_name . ' msg"><span style="font-weight:bold">' . $user_name . ': </span>' . htmlentities($_GET['message']) . '</p>' . PHP_EOL, FILE_APPEND | LOCK_EX);
-  echo '<script>window.location.href = "http://localhost/Chat/chat.php?user_name=' . $user_name . '&message=&submit=Submit+Query";</script>';}
+  echo '<script>window.location.href = "https://serverchat-123.herokuapp.com//Chat/chat.php?user_name=' . $user_name . '&message=&submit=Submit+Query";</script>';}
 ?>
 
 <div id="messages"></div>
