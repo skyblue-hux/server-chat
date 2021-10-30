@@ -1,0 +1,36 @@
+.msg {
+  border: 2px solid red;
+  width: 50%;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#form {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form_div {text-align: center;}
+#form {background-color: white;}
+
+input[type=text] {
+  width: 75%;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 2px black solid;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+}
